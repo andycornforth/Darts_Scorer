@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScorer", "DartsScorer\DartsScorer.csproj", "{A38E4317-73B1-4620-92A3-A47A37AD3B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScorer.Tests", "DartsScorer.Tests\DartsScorer.Tests.csproj", "{457C3E23-5A2D-4A98-9565-EB92EADC2654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScorerWinForms", "DartsScorerWinForms\DartsScorerWinForms.csproj", "{5242F10E-E9D2-4DCA-ADC0-58DE0E94D911}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A38E4317-73B1-4620-92A3-A47A37AD3B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38E4317-73B1-4620-92A3-A47A37AD3B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38E4317-73B1-4620-92A3-A47A37AD3B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38E4317-73B1-4620-92A3-A47A37AD3B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{457C3E23-5A2D-4A98-9565-EB92EADC2654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{457C3E23-5A2D-4A98-9565-EB92EADC2654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{457C3E23-5A2D-4A98-9565-EB92EADC2654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{457C3E23-5A2D-4A98-9565-EB92EADC2654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5242F10E-E9D2-4DCA-ADC0-58DE0E94D911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5242F10E-E9D2-4DCA-ADC0-58DE0E94D911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5242F10E-E9D2-4DCA-ADC0-58DE0E94D911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5242F10E-E9D2-4DCA-ADC0-58DE0E94D911}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
