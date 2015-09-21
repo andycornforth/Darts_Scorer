@@ -36,6 +36,7 @@
             this.BestOfLegsLabel = new System.Windows.Forms.Label();
             this.bestOfLegsLabel2 = new System.Windows.Forms.Label();
             this.bestOfNumeric = new System.Windows.Forms.NumericUpDown();
+            this.errorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bestOfNumeric)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,11 +115,22 @@
             this.bestOfNumeric.Size = new System.Drawing.Size(40, 38);
             this.bestOfNumeric.TabIndex = 8;
             // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Arial Narrow", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.errorLabel.Location = new System.Drawing.Point(30, 340);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(0, 31);
+            this.errorLabel.TabIndex = 9;
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.bestOfNumeric);
             this.Controls.Add(this.bestOfLegsLabel2);
             this.Controls.Add(this.BestOfLegsLabel);
@@ -145,5 +157,6 @@
         private System.Windows.Forms.Label BestOfLegsLabel;
         private System.Windows.Forms.Label bestOfLegsLabel2;
         private System.Windows.Forms.NumericUpDown bestOfNumeric;
+        private System.Windows.Forms.Label errorLabel;
     }
 }
