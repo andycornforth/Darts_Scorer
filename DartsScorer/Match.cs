@@ -23,6 +23,9 @@ namespace DartsScorer
 
         public Match(int bestOf, int startScore)
         {
+            if (bestOf < 1)
+                throw new Exception("The match must have at least 1 leg");
+
             Players = new Dictionary<Player, LegsWon>();
             BestOfLegs = bestOf;
             LegStartScore = startScore;

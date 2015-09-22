@@ -21,7 +21,7 @@ namespace DartsScorerWinForms
         {
             try
             {
-                var matchForm = new MatchForm(player1NameTextBox.Text, player1NameTextBox.Text, Convert.ToInt32(bestOfNumeric.Value), 501);
+                var matchForm = new MatchForm(player1NameTextBox.Text, player2NameTextBox.Text, Convert.ToInt32(bestOfNumeric.Value), 501);
                 matchForm.ShowDialog();
             }
             catch (Exception ex)

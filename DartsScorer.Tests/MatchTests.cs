@@ -75,5 +75,12 @@ namespace DartsScorer.Tests
             match.StartNewLeg();
             match.StartNewLeg();
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception), "The match must have at least 1 leg")]
+        public void ErrorIsThrownWhenThereIs0LegsSelected()
+        {
+            var match = new Match(0, 501);
+        }
     }
 }
