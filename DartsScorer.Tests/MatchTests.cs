@@ -82,5 +82,12 @@ namespace DartsScorer.Tests
         {
             var match = new Match(0, 501);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception), "The leg starting score must be at least 2")]
+        public void ErrorIsThrownWhenThereIsLessThan2StartingScore()
+        {
+            var match = new Match(1, 1);
+        }
     }
 }
