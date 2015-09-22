@@ -24,6 +24,13 @@ namespace DartsScorerWinForms
             _match.AddPlayer(new Player(player2Name));
 
             InitializeComponent();
+            InitializeMatchPanel();
+        }
+
+        private void InitializeMatchPanel()
+        {
+            matchPlayer1NameLabel.Text = _match.Players.Keys.ToList()[0].Name;
+            matchPlayer2NameLabel.Text = _match.Players.Keys.ToList()[1].Name;
         }
     }
 }
