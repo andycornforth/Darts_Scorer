@@ -29,8 +29,11 @@ namespace DartsScorerWinForms
 
         private void InitializeMatchPanel()
         {
-            matchPlayer1NameLabel.Text = _match.Players.Keys.ToList()[0].Name;
-            matchPlayer2NameLabel.Text = _match.Players.Keys.ToList()[1].Name;
+            matchPlayer1NameLabel.Text = legPlayer1NameLabel.Text = _match.Players.Keys.ToList()[0].Name;
+            matchPlayer2NameLabel.Text = legPlayer2NameLabel.Text = _match.Players.Keys.ToList()[1].Name;
+            matchBestOfLabel.Text = string.Format("({0})",_match.BestOfLegs.ToString());
+
+            legPlayer1ScoreLabel.Text = legPlayer2ScoreLabel.Text = _match.LegStartScore.ToString();
         }
     }
 }
