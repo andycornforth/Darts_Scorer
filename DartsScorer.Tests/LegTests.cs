@@ -47,6 +47,36 @@ namespace DartsScorer.Tests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(Exception), "A player must have a name.")]
+        public void ICannotAddAPlayerToALegWithoutAName()
+        {
+            var leg = new Leg(501);
+            var player = new Player(null);
+
+            leg.AddPlayer(player);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception), "A player must have a name.")]
+        public void ICannotAddAPlayerToALegWithANameAsEmptyString()
+        {
+            var leg = new Leg(501);
+            var player = new Player("");
+
+            leg.AddPlayer(player);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception), "A players name cannot exceed 10 characters.")]
+        public void ICannotAddAPlayerToALegWithANameLongerThan10Characters()
+        {
+            var leg = new Leg(501);
+            var player = new Player("12345678910");
+
+            leg.AddPlayer(player);
+        }
+
+        [TestMethod]
         public void APlayerCanHaveAVisitAndSeeTheirScoreChange()
         {
             var leg = new Leg(501);

@@ -56,6 +56,10 @@ namespace DartsScorer
 
         public void AddPlayer(Player player)
         {
+            if (player.Name == null || player.Name == string.Empty)
+                throw new Exception("A player must have a name.");
+            if (player.Name.Count() > 10)
+                throw new Exception("A players name cannot exceep 10 characters");
             if (Players.Where(p => p.Name == player.Name).Count() > 0)
                 throw new Exception("Duplicate player added to leg.");
 
